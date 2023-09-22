@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header>
+    <div class="l_login">
+        <a href="#로그인">로그인</a>
+        <a href="#회원가입">회원가입</a>
+    </div>
+    <h1>BOB.D</h1>
+    <hr>
+</header>
+<main>
+<form method="post" action="##" id="login">
+  <input type="text" name="id" placeholder="ID"><br>
+  <input type="password" name="pwd" placeholder="PW"><br>
+  <input type="submit" value="LOGIN">
+</form>
+<div class="l_list">
+<a href="#회원가입">회원가입</a>
+<a href="#아이디 찾기">아이디 찾기</a>
+<a href="#비밀번호 찾기">비밀번호 찾기</a>
+
+</main>
+</body>
+</html>
