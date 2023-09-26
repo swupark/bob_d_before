@@ -1,0 +1,15 @@
+@charset "utf-8"
+
+body{
+
+}
+.search input{
+	width: 50%;
+	height: 50px;
+	border: 1px solid;
+	border-radius: 25px;
+}
+.h_img img{
+	width: 250px;
+	height: 350px;
+}

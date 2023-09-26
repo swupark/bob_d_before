@@ -20,7 +20,10 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.urls import path, include
 
+from signupapp.views import Signupview
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
+    path('signup/',Signupview.as_view()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
