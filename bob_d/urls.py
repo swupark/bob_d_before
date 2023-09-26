@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from signupapp.views import Signupview
+
 urlpatterns = [
     #path('',)디폴트인 경우 지정해야함
     path('admin/', admin.site.urls),
-    path('signup/',include('signupapp.urls')),
+    path('signup/',Signupview.as_view()),
+    path('account/',include('accountapp.urls'))
+
 ]
