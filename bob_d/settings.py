@@ -50,8 +50,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accountapp',
+<<<<<<< HEAD
     'signupapp',
     'bootstrap4'
+=======
+>>>>>>> parent of 45ecb78 (signupp create)
 ]
 
 MIDDLEWARE = [

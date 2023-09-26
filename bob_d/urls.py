@@ -15,14 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path
 
 from signupapp.views import Signupview
 
 urlpatterns = [
-    #path('',)디폴트인 경우 지정해야함
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('signup/',Signupview.as_view()),
     path('account/',include('accountapp.urls'))
 
+=======
+>>>>>>> parent of 45ecb78 (signupp create)
 ]
