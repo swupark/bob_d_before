@@ -25,5 +25,6 @@ from signupapp.views import Signupview
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
-    path('signup/',Signupview.as_view()),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('signup/', Signupview.as_view()),
+]
+
